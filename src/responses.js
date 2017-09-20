@@ -56,7 +56,7 @@ const respond = (request, response, status, type) => {
       break;
   }
 
-  if (type === 'application/json'||type === 'text/html') {
+  if (type === 'application/json' || type === 'text/html') {
     const obj = {
       id,
       message: mess,
