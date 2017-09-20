@@ -18,7 +18,7 @@
         h1.textContent = `ID: ${obj.id}`;
         p.textContent = `Message: ${obj.message}`;
       } else if (type === 'text/xml'){
-        console.dir(xhr.response);    //Show in console
+        console.dir(xhr.responseText);    //Show in console
         const id = xhr.responseXML.querySelector('id').textContent;
         const message = xhr.responseXML.querySelector('message').textContent;
         h1.textContent = `ID: ${id}`;
